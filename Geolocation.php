@@ -3,7 +3,7 @@ namespace geolocation;
 
 use GuzzleHttp\Client;
 
-trait Geolocation
+Class Geolocation
 {  
 	/**
      * Google API Key. This Api key should be free for limited access. 
