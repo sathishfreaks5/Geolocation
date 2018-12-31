@@ -13,13 +13,7 @@ Update Google Api key googleKey() function.
 
 ## Usage
 
-You can start using this package right away by importing your JSON data from a file:
-
-```php
-Coming soon
-```
-
-Or from a JSON String:
+In php version
 
 ```php
 use sathishfreaks5/geolocation;
