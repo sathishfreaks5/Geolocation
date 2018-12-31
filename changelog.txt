@@ -1,0 +1,5 @@
+Version: 1.0
+=================
+* find latitude and longitude by given zipcode using google service provider.
+* find Zipcode by given latitude and longitude using google service provider.
+* Google API Key.
