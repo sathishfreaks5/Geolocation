@@ -20,6 +20,8 @@ use sathishfreaks5/geolocation;
  
 geolocation::findZipByLatLon(48301);
 geolocation::findZipByLatLon('40.4474', '-74.6715'); 
+geolocation::getCoordinatesWithinRadius (['40.4474', '-74.6715'],['40.4474', '-74.6715'], 25) ;
+geolocation::radians(25);
 ``` 
 
   
