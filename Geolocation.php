@@ -86,6 +86,31 @@ Class Geolocation
         return $array; 
          
     }
+
+	/**
+    	* Using Co-ordinate getting results  
+	 *
+     */
+	 function getCoordinatesWithinRadius ($coordinateArray, $center, $radius) {
+	  $resultArray= array();
+	  $lat1 = $center[0];
+	  $long1 = $center[1];
+	  foreach ($coordinateArray as $coordinate) {
+	    $lat2 = $coordinate[0];
+	    $long2 = $coordinate[1];
+	    $distance = 3959 * acos(cos(radians($lat1)) * cos(radians($lat2)) * cos(radians($long2) - radians($long1)) + sin(radians($lat1)) * sin(radians($lat2)));
+	    if ($distance < $radius) $resultArray[] = $coordinate;
+	  }
+	  return $resultArray;  
+	}
+	
+	/**
+    	* Redian Calculation  
+	*
+        */
+	function radians($deg) { 
+  			return $deg * M_PI / 180;
+	}
  
 
 }
