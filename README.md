@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-It's trait function so please do manual configure into your classes.
+Access the function.
 ```
 ```
 Update Google Api key googleKey() function.
