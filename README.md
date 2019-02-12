@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-composer require sathishfreaks5/geolocation
+It's trait function so please do manual configure into your classes.
 ```
 ```
 Update Google Api key googleKey() function.
@@ -16,7 +16,6 @@ Update Google Api key googleKey() function.
 In php version
 
 ```php
-use sathishfreaks5/geolocation;
  
 geolocation::findZipByLatLon(48301);
 geolocation::findZipByLatLon('40.4474', '-74.6715'); 
